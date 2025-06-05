@@ -35,12 +35,12 @@ function Project() {
         {/* Projects Grid */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center mt-10 w-full">
           {/* Card 1 */}
-          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center p-4 rounded-lg">
-            <img src={UIUX} alt="UIUX Project" className="max-h-full" />
+          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center p-4 rounded-lg shadow-lg shadow-violet-500/50 ">
+            <img src={UIUX} alt="UIUX Project" className="max-h-full " />
           </div>
 
           {/* Card 2 */}
-          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center relative p-4 rounded-lg">
+          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center relative p-4 rounded-lg shadow-lg shadow-amber-500/50 ">
             <img src={r3} alt="Overlay Project" className="w-52 z-10" />
             <img
               src={r2}
@@ -50,7 +50,7 @@ function Project() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center relative p-4 rounded-lg">
+          <div className="bg-gray-500/20 h-60 w-72 sm:w-80 flex justify-center items-center relative p-4 rounded-lg shadow-lg shadow-cyan-500/50 ">
             <img src={mobile1} alt="Mobile 1" className="w-20 z-10" />
             <img
               src={mbobilemiddle}

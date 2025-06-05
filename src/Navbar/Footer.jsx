@@ -8,38 +8,54 @@ import { CiTwitter, CiYoutube } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 
 function Footer() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // Close mobile menu
+    }
+  };
   return (
     <div className="bg-[#222831] h-[20rem] flex items-center justify-center flex-col gap-y-12 w-full">
       <div className="flex items-center justify-center gap-8 w-full sm:flex-col flex-col md:flex-row">
-        <div className=" text-[#EEEEEE] gap-1 flex text-1xl">
+        <div
+          className=" text-[#EEEEEE] gap-1 flex text-1xl cursor-pointer hover:bg-gray-700 rounded-full p-1"
+          onClick={() => scrollToSection("home")}
+        >
           <HomeOutlinedIcon />
-          <span className="]">Home</span>
+          <span className="text-[#EEEEEE] gap-1 flex text-1xl">Home</span>
         </div>
-        <div className="text-[#EEEEEE] gap-1 flex text-1xl">
+        <div
+          className="text-[#EEEEEE] gap-1 flex text-1xl cursor-pointer cursor-pointer hover:bg-gray-700 rounded-full p-1"
+          onClick={() => scrollToSection("about")}
+        >
           <PersonOutlineOutlinedIcon />
           <span className="">About me</span>
         </div>
-        <div className="text-[#EEEEEE] gap-1 flex text-1xl">
+        <div
+          className="text-[#EEEEEE] gap-1 flex text-1xl cursor-pointer cursor-pointer hover:bg-gray-700 rounded-full p-1"
+          onClick={() => scrollToSection("contact")}
+        >
           <CallOutlinedIcon />
           <span className="">Contact</span>
         </div>
       </div>
       <div className="flex items-center justify-center gap-8">
-        <div className="rounded-full bg-gray-500/20">
+        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
           {" "}
-          <CiFacebook className="w-8 h-[2.6rem] rounded-xl text-white" />
+          <CiFacebook className="w-8 h-[2.6rem] rounded-full text-white" />
         </div>
-        <div className="rounded-full bg-gray-500/20">
-          <FaInstagram className="w-8 h-[2.6rem] text-white" />
+        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
+          <FaInstagram className="w-8 h-[1.9rem] text-white" />
         </div>
-        <div className="rounded-full bg-gray-500/20">
+        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
           <CiTwitter className="w-8 h-[2.6rem] text-white" />
         </div>{" "}
-        <div className="rounded-full bg-gray-500/20">
+        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
           <CiYoutube className="w-8 h-[2.6rem] text-white" />
         </div>
       </div>
-      <div className="flex justify-center self-end w-96 h-[3rem] items-center pr-12 ">
+      <div className="flex justify-center self-end w-96 h-[2.6rem] items-center pr-12 ">
         {" "}
         <span className="flex text-[#EEEEEEBF] ">
           Terms of Service - Privacy Policy

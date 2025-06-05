@@ -29,11 +29,11 @@ function Aboutme() {
         </div>
 
         {/* Image section */}
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center ">
           <img
             src={Aboutimg}
             alt="About Page"
-            className="w-64 sm:w-80 md:w-96 lg:w-[28rem]"
+            className="w-64 sm:w-80 md:w-96 lg:w-[28.2rem] shadow-lg shadow-cyan-500/50 rounded-[5vw]"
           />
         </div>
       </div>

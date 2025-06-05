@@ -8,23 +8,23 @@ import Contact from "./Components/Contact";
 import Footer from "./Navbar/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <Home />
-        <Aboutme />
-        <Project />
-        <Contact />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="about">
+          <Aboutme />
+        </div>
+        <div id="project">
+          <Project />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="/" element={<Project />} />
-          <Route path="/" element={<Aboutme />} />
-          <Route path="/" element={<Contact />} /> */}
-        </Routes>
       </BrowserRouter>
     </>
   );
