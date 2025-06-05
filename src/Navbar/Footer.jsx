@@ -36,7 +36,7 @@ function Footer() {
           className="text-[#EEEEEE] gap-1 flex text-1xl cursor-pointer cursor-pointer hover:bg-gray-700 rounded-full p-1"
           onClick={() => scrollToSection("contact")}
         >
-          <CallOutlinedIcon />
+          <CallOutlinedIcon style={{ width: "25px", height: "22px" }} />
           <span className="">Contact</span>
         </div>
       </div>

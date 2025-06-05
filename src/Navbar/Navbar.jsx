@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi"; // Hamburger + Close icons
-
+import logo from "../../src/assets/logo11.png";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const scrollToSection = (id) => {
@@ -14,8 +14,9 @@ function Navbar() {
   return (
     <div className="bg-[#222831] text-white border-b-2 border-[#EEEEEE1A]">
       <nav className="flex h-20 items-center justify-between px-6 md:px-12">
-        <div className="text-2xl font-bold">
-          <h1>SaulDesign</h1>
+        <div className="flex items-center justify-center">
+          <img src={logo} alt="logo" className="h-[90px] w-[90px]" />
+          <h1 className="text-2xl font-bold  ">SaulDesign</h1>
         </div>
 
         {/* Desktop Links */}
