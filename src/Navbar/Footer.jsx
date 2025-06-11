@@ -6,6 +6,9 @@ import { SlSocialYoutube } from "react-icons/sl";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter, CiYoutube } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
+import { SiFiverr } from "react-icons/si";
+import { CiLinkedin } from "react-icons/ci";
+import { CgMail } from "react-icons/cg";
 
 function Footer() {
   const scrollToSection = (id) => {
@@ -41,19 +44,24 @@ function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center gap-8">
-        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
+        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center  cursor-pointer">
           {" "}
           <CiFacebook className="w-8 h-[2.6rem] rounded-full text-white" />
         </div>
-        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
-          <FaInstagram className="w-8 h-[1.9rem] text-white" />
-        </div>
-        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
-          <CiTwitter className="w-8 h-[2.6rem] text-white" />
-        </div>{" "}
-        <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center">
-          <CiYoutube className="w-8 h-[2.6rem] text-white" />
-        </div>
+        <a href="mailto:jaweriab48@gmail.com">
+          <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center  cursor-pointer">
+            <CgMail className="w-8 h-[1.9rem] text-white" />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jaweria-bilal-25366727b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className=" bg-gray-500/20 p-1 rounded-full w-[40px] h-[40px] flex  items-center justify-center  cursor-pointer">
+            <CiLinkedin className="w-8 h-[2.6rem] text-white" />
+          </div>
+        </a>
       </div>
       <div className="flex justify-center self-end w-96 h-[2.6rem] items-center pr-12 ">
         {" "}
